@@ -1,8 +1,10 @@
-# epicEFI Console and TunerStudio plugin
+# epicEFI Console and TunerStudio plugin 
 
 <img width="888" height="625" alt="image" src="https://github.com/user-attachments/assets/2a14188c-bc0f-4f0d-8836-22d5c63e4b76" />
 
 A TunerStudio plugin and standalone application for the [epicEFI](https://epicefi.com). It covers the parts of running an epicEFI ECU that TunerStudio itself does not: firmware flashing, ECU backup, online updates, Lua scripting, and diagnostics.
+
+### [Get the latest release](https://github.com/epicEFI/epic-console/releases/)  ![GitHub Release](https://img.shields.io/github/v/release/epicEFI/epic-console)
 
 ## Features
 
