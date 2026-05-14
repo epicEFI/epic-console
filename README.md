@@ -1,4 +1,6 @@
-# epicEFI Tuner Plugin
+# epicEFI Console and TunerStudio plugin
+
+<img width="928" height="582" alt="image" src="https://github.com/user-attachments/assets/b00856d3-de12-440d-ac4c-73616657bf5c" />
 
 A TunerStudio plugin and standalone application for the [epicEFI](https://epicefi.com) fork of rusEFI. It covers the parts of running an epicEFI ECU that TunerStudio itself does not: firmware flashing, ECU backup, online updates, Lua scripting, and diagnostics.
 
@@ -15,10 +17,10 @@ This repository hosts the released binaries. The source lives in a separate repo
 
 ## How it runs
 
-The plugin is a single JAR with two entry points:
+The console is a single executable with two entry points:
 
-- **Inside TunerStudio.** Loaded from TunerStudio's plugins folder, it adds its tabs to the TunerStudio UI and uses the connection TunerStudio already has open to the ECU.
-- **As a standalone console.** The same JAR launches as a desktop application, for flashing, backup, and recovery on machines without TunerStudio installed.
+- **Inside TunerStudio.** Open the plugin from TunerStudio using Plugins -> epicEFI Plugin.
+- **As a standalone console.** Launch the console from the desktop shortcut or start menu.
 
 ## Installation
 
