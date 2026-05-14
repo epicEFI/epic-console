@@ -1,19 +1,17 @@
 # epicEFI Console and TunerStudio plugin
 
-<img width="928" height="582" alt="image" src="https://github.com/user-attachments/assets/b00856d3-de12-440d-ac4c-73616657bf5c" />
+<img width="888" height="625" alt="image" src="https://github.com/user-attachments/assets/2a14188c-bc0f-4f0d-8836-22d5c63e4b76" />
 
-A TunerStudio plugin and standalone application for the [epicEFI](https://epicefi.com) fork of rusEFI. It covers the parts of running an epicEFI ECU that TunerStudio itself does not: firmware flashing, ECU backup, online updates, Lua scripting, and diagnostics.
+A TunerStudio plugin and standalone application for the [epicEFI](https://epicefi.com). It covers the parts of running an epicEFI ECU that TunerStudio itself does not: firmware flashing, ECU backup, online updates, Lua scripting, and diagnostics.
 
-This repository hosts the released binaries. The source lives in a separate repository.
+## Features
 
-## What it does
-
-- **Flashes epicEFI firmware to the ECU.** Reads the rusEFI signature off the connected controller, identifies the board and firmware version, reboots into DFU, then erases and writes the new image.
-- **Online firmware updates.** Checks for the latest release for your specific board, downloads it, installs the matching TunerStudio INI definition, and flashes the firmware.
-- **ECU backup.** Reads the current firmware off the controller and saves it locally, so there is always a known-good image to roll back to.
-- **Flash an arbitrary firmware file.** For development builds, custom firmware, or restoring from backup.
-- **Diagnostic trouble codes.** Reads DTCs from the running ECU.
-- **Lua scripting for the ECU.** A built-in editor with syntax highlighting, error checking with inline markers, and autocomplete, plus Load and Burn directly to the controller.
+- **ECU identification** - Enables identification of the connected ECU, if it is active or in recovery (DFU), along with reboot to recovery or firmware.
+- **Online firmware updates** - Enables automatic identification and firmware updates for ECUs, with automatic backup before flashing the latest firmware.
+- **ECU backup** - Reads the current firmware off the controller and saves it locally, including the tune. Flashing these updates back restores the ECU fully.
+- **Image flashing** - Enables flashing custom images or backups back to the ECU. Enables recovering of bricked ECUs
+- **Fault codes** - Reads the fault codes from the ECU and displays a industry-standard error message.
+- **Lua** - A built-in Lua IDE with syntax highlighting, error checking with inline markers, and autocomplete, plus Load and Burn directly to the controller.
 
 ## How it runs
 
