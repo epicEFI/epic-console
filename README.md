@@ -4,6 +4,10 @@
 
 A TunerStudio plugin and standalone application for the [epicEFI](https://epicefi.com). It covers the parts of running an epicEFI ECU that TunerStudio itself does not: firmware flashing, ECU backup, online updates, Lua scripting, and diagnostics.
 
+## Installation
+
+A Windows installer is the recommended way to install. It bundles the plugin together with the drivers required for flashing on Windows, registers the plugin with TunerStudio, and places a desktop shortcut that opens the standalone console.
+
 ### [Get the latest release](https://github.com/epicEFI/epic-console/releases/)  
 
 ## Features
@@ -23,9 +27,6 @@ The console is a single executable with two entry points:
 - **Inside TunerStudio.** Open the plugin from TunerStudio using Plugins -> epicEFI Plugin.
 - **As a standalone console.** Launch the console from the desktop shortcut or start menu.
 
-## Installation
+## Contributing
 
-A Windows installer is the recommended way to install. It bundles the plugin together with the STM32, ST-Link, and VCP drivers required for flashing on Windows, registers the plugin with TunerStudio, and places a desktop shortcut that opens the standalone console.
-
-Download the latest installer (and the raw JAR, if you prefer to install it manually) from the [Releases](../../releases) page.
-
+The console is in early alpha and the source code is closed for now, due to intense development.
